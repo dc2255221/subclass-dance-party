@@ -3,8 +3,11 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
-  font-size: 18px;
+  /* background-color:#444;
+  font-size: 18px; */
+  background-image: url(https://mcdn.wallpapersafari.com/medium/17/3/Lts3dK.jpg);
+  background-size: cover;
+  /* width: 100% no-repeat; */
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -20,8 +23,16 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
+.dancer {
+  content: url(https://i.imgur.com/QGo5isT.gif?noredirect);
+  /* border:10px solid red;
+  border-radius:10px; */
   position:absolute;
+}
+
+.sonic {
+  content: url(https://i.gifer.com/3F3F.gif);
+  width: 150px;
+  position: absolute;
+  
 }
