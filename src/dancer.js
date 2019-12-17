@@ -9,7 +9,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   // Visualization:
 
   // use jQuery to create an HTML <span> tag
-  this.$node = $('<span class="dancer "></span>');
+  this.$node = $('<span class="dancer a:hover "></span>');
   this.timeBetweenSteps = timeBetweenSteps;
 
   // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
@@ -40,7 +40,6 @@ makeDancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 
 };
-
 
 // Questions
 // How should we create the functionality for the mouseover so that when we hover over a dancer with the mouse, something happens?
