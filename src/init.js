@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  window.dancers = [];
+  window.dancer = [];
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -16,8 +16,8 @@ $(document).ready(function() {
      * to the stage.
      */
 
-    console.log('this is ', this);
-    console.log('event is ', event.currentTarget);
+    // console.log('this is ', this);
+    // console.log('event is ', event.currentTarget);
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
     // get the maker function for the kind of dancer we're supposed to make
@@ -29,12 +29,33 @@ $(document).ready(function() {
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      randomNum * 1000000000000000000
+      randomNum * 1000
     );
-    console.log(randomNum);
+
+    // console.log(randomNum);
     $('body').append(dancer.$node);
+    window.dancer.push(dancer);
+  });
+
+  //  $('.addVerticalineUpButton').on('click', function(event) {
+  // // console.log(event)
+  //   for (var i = 0; i < window.dancer.length; i++) {
+
+  //     window.dancer[i].verticalLineUp();
+  //   }
+  // // console.log(window.dancer);
+  // });
+
+  $('.addHorizontalLineUpButton').on('click', function(event) {
+  // console.log(event)
+    for (var i = 0; i < window.dancer.length; i++) {
+
+      window.dancer[i].horizontalLineUp();
+    }
+  // console.log(window.dancer);
   });
 });
+
 
 
 

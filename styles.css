@@ -36,6 +36,13 @@ body, a:link, a:visited, a:active{
   position: absolute;
 }
 
+.pikachu {
+  content: url(https://media3.giphy.com/media/jM4bWFBKpSFeo/source.gif);
+  width: 200px;
+  position: absolute;
+}
+
+/*pseudo selector*/
 a:hover {
-  color: #FF00FF;
+  background: skyblue;
 }

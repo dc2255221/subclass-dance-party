@@ -41,10 +41,31 @@ makeDancer.prototype.setPosition = function(top, left) {
 
 };
 
+//lineup function for each dancers/
+makeDancer.prototype.horizontalLineUp = function() {
+  // console.log("This function ran")
+  // console.log(this);
+  var styleSettings = {
+    top: 670
+  };
+  this.$node.css(styleSettings);
+};
+
+//lineup function for each dancers/
+// makeDancer.prototype.verticalLineUp = function() {
+//   // console.log("This function ran")
+//   // console.log(this);
+//   var styleSettings = {
+//     left: 0
+//   };
+//   this.$node.css(styleSettings);
+// };
+
 // Questions
 // How should we create the functionality for the mouseover so that when we hover over a dancer with the mouse, something happens?
 // How to change the movement/ animation for a different dancer? For example, how would we make a specific dancer jump and down?
 // How exactly is the dancerMakerFunction currently working for the initial addDancerButton?
 // why is sonic not changing its movement?
+
 
 
